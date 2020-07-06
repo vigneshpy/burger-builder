@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Burger.css';
 import BurgerIng from './BurgerIng';
 const Burger =(props)=>{
-    console.log(Object.keys( props.ingredients ))
+
     let transformedIngredients = Object.keys( props.ingredients )
         .map( igKey => {
             return [...Array( props.ingredients[igKey] )].map( ( _, i ) => {
